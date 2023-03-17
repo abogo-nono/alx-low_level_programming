@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -S -fgnu-tm
+gcc -S -masm=intel -Og -fverbose-asm $CFILE
