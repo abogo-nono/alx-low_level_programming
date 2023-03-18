@@ -18,6 +18,6 @@ int main(void)
 		if (x != 'e' && x != 'q')
 			putchar(x);
 	}
-	putchar("\n");
+	printf("\n");
 	return (0);
 }
