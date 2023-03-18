@@ -15,7 +15,7 @@ int main(void)
 	{
 		putchar(i + '0');
 	}
-	for (i = 17; i < 23; i++)
+	for (i = 49; i < 55; i++)
 	{
 		putchar(i + '0');
 	}
