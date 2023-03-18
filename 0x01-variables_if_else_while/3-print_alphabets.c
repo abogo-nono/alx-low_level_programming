@@ -16,7 +16,7 @@ int main(void)
 		printf("%c", i + '0');
 	}
 	printf("\n");
-	for (i = 17; i < 43; ++)
+	for (i = 17; i < 43; i++)
 	{
 		printf("%c", i + '0');
 	}
