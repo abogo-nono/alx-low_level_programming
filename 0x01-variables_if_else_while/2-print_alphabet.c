@@ -12,7 +12,7 @@ int main(void)
 
 	for (i = 49; i < 75; i++)
 	{
-		printf("%c\n", i + '0');
+		printf("%c", i + '0');
 	}
 	return (0);
 }
