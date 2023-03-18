@@ -2,7 +2,8 @@
 
 /**
  * main - Entry point
- * Return 0 Already (success)
+ *
+ * Return: 0 Already (success)
  *
  */
 int main(void)
