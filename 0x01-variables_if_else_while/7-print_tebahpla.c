@@ -11,10 +11,10 @@ int main(void)
 
 	int i;
 
-	for (i = 74; i <= 49; i--)
+	for (i = 74; i > 48; i--)
 	{
-		printf("%c", i + '0');
+		putchar(i + '0');
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
