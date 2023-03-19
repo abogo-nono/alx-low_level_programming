@@ -10,7 +10,7 @@
 int main(void)
 {
 
-	int number;
+	int number, i;
 	char number_letter[50];
 	sprintf(number_letter, "%d", number);
 
