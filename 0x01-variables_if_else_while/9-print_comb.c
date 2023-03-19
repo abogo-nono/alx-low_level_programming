@@ -10,7 +10,7 @@
 int main(void)
 {
 
-	int number, i;
+	int number = 2023, i;
 	char number_letter[50];
 	sprintf(number_letter, "%d", number);
 
