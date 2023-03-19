@@ -17,7 +17,8 @@ int main(void)
 	for (i = 0; i < strlen(number_letter); i++)
 	{
 		putchar(number_letter[i]);
-		putchar(', ');
+		putchar(',');
+		putchar(' ');
 	}
 	printf("\n");
 	return (0);
