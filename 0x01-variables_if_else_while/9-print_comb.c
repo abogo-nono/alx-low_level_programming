@@ -14,7 +14,7 @@ int main(void)
 	char number_letter[50];
 	sprintf(number_letter, "%d", number);
 
-	for (i = 0; i < strlen(number_letter); i++)
+	for (i = 0; i < (int)(strlen(number_letter)); i++)
 	{
 		putchar(number_letter[i]);
 		putchar(',');
