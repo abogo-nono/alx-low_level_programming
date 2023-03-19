@@ -10,15 +10,15 @@
 int main(void)
 {
 
-	int number = 2023, i;
-	char number_letter[50];
-	sprintf(number_letter, "%d", number);
-
-	for (i = 0; i < (int)(strlen(number_letter)); i++)
+	int i;
+	for (i = 48; i < 58; i++)
 	{
-		putchar(number_letter[i]);
-		putchar(',');
-		putchar(' ');
+		putchar(i);
+		if(i < 57)
+		{
+			putchar(44);
+			putchar(32);
+		}
 	}
 	printf("\n");
 	return (0);
