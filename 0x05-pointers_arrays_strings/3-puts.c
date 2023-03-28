@@ -1,3 +1,5 @@
+#include <stdout.h>
+
 /**
  * _puts - print a string
  * @str: the string to print
