@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strlen - count the numberf characters of a string
+ * print_rev - count the numberf characters of a string
  * @s: the string
  * Return: i
  */
@@ -18,5 +18,7 @@ void print_rev(char *s)
 	{
 		putchar(s[i]);
 	}
-}
 
+	putchar('\n');
+
+}
