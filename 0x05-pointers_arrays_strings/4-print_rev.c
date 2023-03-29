@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _strlen - count the numberf characters of a string
  * @s: the string
