@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-void print_rev(char *str);
+void print_array(int *a, int n);
 
 #endif /* MAIN_H */

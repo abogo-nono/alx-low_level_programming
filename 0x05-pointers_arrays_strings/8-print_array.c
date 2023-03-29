@@ -1,3 +1,11 @@
+#include "main.h"
+
+/**
+ * print_array - A function that print all the elements of an array
+ * @a: int pointer
+ * @n: integer
+ * Return: void
+ */
 void print_array(int *a, int n)
 {
 	int i;
