@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_rev - count the numberf characters of a string
+ * print_rev - a function that prints a string, in reverse.
  * @s: the string
- * Return: i
+ * Return: void
  */
 void print_rev(char *s)
 {
@@ -18,7 +18,5 @@ void print_rev(char *s)
 	{
 		putchar(s[i]);
 	}
-
 	putchar('\n');
-
 }
