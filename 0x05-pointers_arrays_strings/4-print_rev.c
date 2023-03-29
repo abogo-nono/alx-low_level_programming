@@ -1,7 +1,7 @@
 /**
- * _strlen - count the numberf characters of a string
+ * print_rev - reverse and print a string
  * @s: the string
- * Return: i
+ * Return: void
  */
 int print_rev(char *s)
 {
