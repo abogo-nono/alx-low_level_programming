@@ -2,9 +2,10 @@
 #include <stdio.h>
 
 /**
- * _strcat - concatained two string
+ * _strncat - concatained two string
  * @dest: first string
  * @src: second string
+ * @n: concataine start point
  * Return: char
  */
 char *_strncat(char *dest, char *src, int n)
