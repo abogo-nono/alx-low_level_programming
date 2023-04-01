@@ -8,13 +8,11 @@
  */
 int _strcmp(char *dest, char *src)
 {
-	int i, n = strlen(dest);
+	int i = 0, value;
 
-	for (i = 0; i < n && dest[i] != '\0'; i++)
-		if ((int)dest[i] < (int)src[i])
-			return (-15);
-		else if ((int)dest[i] > (int)src[i])
-			return (15);
+	while (dest[i] == src[i] && dest[i] != '\0')
+		i++;
 
-	return (0);
+	value = dest[i] - src[i];
+	return (value);
 }
