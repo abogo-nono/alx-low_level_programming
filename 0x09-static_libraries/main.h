@@ -1,5 +1,5 @@
-#if !defined(_MAIN_H_)
-#define _MAIN_H_
+#if !defined(_MAIN_H)
+#define _MAIN_H
 
 #include <stdio.h>
 
@@ -24,4 +24,4 @@ unsigned int _strspn(char *s, char *accept);
 char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
-#endif // _MAIN_H_
+#endif // _MAIN_H
