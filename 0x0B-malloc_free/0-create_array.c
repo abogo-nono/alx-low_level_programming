@@ -1,9 +1,10 @@
+#include <stdlib.h>
 #include "main.h"
 
 char *create_array(unsigned int size, char c)
 {
-    char table[size];
-    int i;
+    unsigned int i;
+    char *table = malloc(size * sizeof(char));
 
     for (i = 0; i < size; i++)
     {
