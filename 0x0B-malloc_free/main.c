@@ -5,16 +5,16 @@
 int main(void)
 {
 
-    char ch = 'a';
-    unsigned number = 10, i;
+char ch = 'a';
+unsigned number = 10, i;
 
-    for (i = 0; i < number; i++)
-    {
-        printf("%c", *create_array(number, ch));
-    }
-    
-    
-    return 0;
+for (i = 0; i < number; i++)
+{
+printf("%c", *create_array(number, ch));
+}
+
+
+return 0;
 }
 
 
