@@ -1,9 +1,13 @@
-#include <stdlib.h>
 #include <stdio.h>
 
-int main(int argc, char* argv[])
+/**
+ * main - entrey point of the program
+ * @argc: int number a arguments passed to gcc
+ * @argv: the array of arguments
+ * Return: (0)
+ */
+int main(int argc, char *argv[])
 {
 	printf("%s", argv[0]);
-	
 	return (0);
 }
