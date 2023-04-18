@@ -4,7 +4,7 @@
 /**
  * struct dog - used to represent a dog
  * @name: dog name
- * @age: og age
+ * @age: dog age
  * @owner: dog owner
  */
 struct dog
@@ -13,7 +13,5 @@ struct dog
 	float age;
 	char *owner;
 };
-
-typedef struct dog;
 
 #endif
