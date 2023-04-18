@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * init_dog - used to initilized a dog.
  * @d: a dog
