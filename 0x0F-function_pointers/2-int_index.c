@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include "function_pointers.h"
+
+
 /**
  * int_index - a function that searches for an integer.
  * @array: pointer to an array.
@@ -17,7 +19,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 		if (c)
 			return (j);
-		i++;
+		j++;
 	}
 
 	return (-1);
