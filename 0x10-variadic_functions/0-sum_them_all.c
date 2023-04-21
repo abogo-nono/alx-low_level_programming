@@ -7,12 +7,13 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list ap;
+	unsigned int i;
+	int s = 0;
+	va_list e;
 
-	int i, s = 0;
+	va_start(e, n);
 
-	va_start(ap, n);
-	for (i = n; i >= 0; i = va_arg(ap, int))
+	for (i = 0; i < n; i++)
 		s += i;
 
 	return (s);
