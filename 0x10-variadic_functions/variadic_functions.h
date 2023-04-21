@@ -1,4 +1,4 @@
-#if !defined(MAIN_H)
+#ifndef MAIN_H
 #define MAIN_H
 
 int sum_them_all(const unsigned int n, ...);
