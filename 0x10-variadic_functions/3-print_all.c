@@ -1,6 +1,5 @@
 #include <stdarg.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include "variadic_functions.h"
 
 /**
@@ -34,7 +33,6 @@ void print_all(const char * const format, ...)
 			printf("%f", va_arg(m, double));
 			break;
 			default:
-			exit(1);
 			break;
 		}
 		i++;
