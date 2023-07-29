@@ -7,6 +7,8 @@
  */
 int _islower(int c)
 {
+	int i;
+
 	for (i = 97; i < 123; i++)
 		if (c == i)
 			return (1);
