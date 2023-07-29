@@ -1,11 +1,11 @@
 /**
- * _isalpha - A function that checks for alphabetic character
+ * _islower - A function that checks for lowercase character
  *
  * @c: the char to check
  *
  * Return: 1 if it's an alphabetic char and 0 else
  */
-int _isalpha(int c)
+int _islower(int c)
 {
 	for (i = 97; i < 123; i++)
 		if (c == i)
