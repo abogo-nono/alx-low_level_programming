@@ -14,7 +14,7 @@ int _isalpha(int c)
 			return (1);
 
 	for (j = 65; j < 91; j++)
-		if(c == j)
+		if (c == j)
 			return (1);
 
 	return (0);
