@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * print_sign - A function that prints the sign of a number
  *
