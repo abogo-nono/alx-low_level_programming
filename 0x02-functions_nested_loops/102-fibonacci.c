@@ -6,16 +6,21 @@
  */
 void fibonacci(void)
 {
-	int i;
+	long int i, last_last = 1, last = 2, next = last_last + last;
 
-	printf("%d, %d, ", 1, 2);
+	printf("%lu, %lu, ", last_last, last);
 
 	for (i = 3; i < 50; i++)
 	{
+		last_last = last;
+		last = next;
+
 		printf("%d", ((i - 1) + i));
 
 		if (((i - 1) + i) != 97)
 			printf(", ");
+
+		next = last_last + last;
 	}
 
 	printf("\n");
