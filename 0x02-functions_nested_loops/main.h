@@ -13,6 +13,5 @@ void jack_bauer(void);
 int add(int, int);
 void times_table(void);
 void print_to_98(int n);
-void sum_of_multiple_of_3_or_5_blow_1024(void);
 
 #endif
