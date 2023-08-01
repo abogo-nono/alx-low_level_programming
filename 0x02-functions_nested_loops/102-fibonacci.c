@@ -10,14 +10,14 @@ void fibonacci(void)
 
 	printf("%lu, %lu, ", last_last, last);
 
-	for (i = 3; i < 50; i++)
+	for (i = 3; i <= 50; i++)
 	{
 		last_last = last;
 		last = next;
 
-		printf("%d", ((i - 1) + i));
+		printf("%lu", next);
 
-		if (((i - 1) + i) != 97)
+		if (i != 50)
 			printf(", ");
 
 		next = last_last + last;
