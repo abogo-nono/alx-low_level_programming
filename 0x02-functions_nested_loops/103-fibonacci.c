@@ -31,7 +31,6 @@ int main(void)
 {
 	long int limit = 4000000;
 
-	printf("The sum of even Fibonacci numbers up to\"\
-	%ld is %ld\n", limit, fibonacci(limit));
+	printf("%ld\n", fibonacci(limit));
 	return (0);
 }
