@@ -7,14 +7,14 @@
 */
 long int fibonacci(long int limit)
 {
-	long int a = 1, b = 2, sum = 0;
+	long int a = 1, b = 2, sum = 0, temp;
 
 	while (b <= limit)
 	{
 		if (b % 2 == 0)
 			sum += b;
 
-		long temp = a;
+		temp = a;
 
 		a = b;
 		b = temp + b;
