@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
-* fibonacci - a function that prints the first 50 Fibonacci numbers
+* fibonacci - a function that prints the first 98 Fibonacci numbers
 * Return: void
 */
 void fibonacci(void)
@@ -10,12 +10,12 @@ void fibonacci(void)
 
 	printf("%lu, %lu, ", last_last, last);
 
-	for (i = 3; i <= 50; i++)
+	for (i = 3; i <= 98; i++)
 	{
 		next = last_last + last;
 		printf("%lu", next);
 
-		if (i != 50)
+		if (i != 98)
 			printf(", ");
 
 		last_last = last;

@@ -1,36 +1,37 @@
 #include <stdio.h>
 
 /**
- * fibonacci - return the sum of all ven-value fibonacci
- * Return: the sun
+* fibonacci - return the sum of even-valued Fibonacci numbers up to a limit
+* @limit: the limit to which Fibonacci numbers are summed
+* Return: the sum
 */
-long int fibonacci(void)
+long int fibonacci(long int limit)
 {
-	long int i, last_last = 1, last = 2, next, sum = 0;
+	long int a = 1, b = 2, sum = 0;
 
-	next = last_last + last;
-
-	for (i = 2; i < 4000000; i++)
+	while (b <= limit)
 	{
-		last_last = last;
-		last = next;
+		if (b % 2 == 0)
+			sum += b;
 
-		if (next % 2 == 0)
-			sum += next;
+		long int temp = a;
 
-		next = last_last + last;
+		a = b;
+		b = temp + b;
 	}
 
 	return (sum);
 }
 
 /**
- * main - entry point of all c programme
- * Return: 0 already
+* main - Entry point.
+* Return: 0 always
 */
 int main(void)
 {
-	printf("%lu\n", fibonacci());
+	long int limit = 4000000;
+
+	printf("The sum of even Fibonacci numbers up to\"\
+	%ld is %ld\n", limit, fibonacci(limit));
 	return (0);
 }
-
