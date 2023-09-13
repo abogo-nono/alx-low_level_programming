@@ -14,7 +14,7 @@ long int fibonacci(long int limit)
 		if (b % 2 == 0)
 			sum += b;
 
-		long int temp = a;
+		long temp = a;
 
 		a = b;
 		b = temp + b;
