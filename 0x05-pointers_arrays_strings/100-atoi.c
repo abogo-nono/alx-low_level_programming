@@ -41,7 +41,6 @@ int _atoi(char *s)
 		i++;
 	}
 
-	// Handle any remaining non-digit characters
 	while (s[i] != '\0')
 	{
 		if (s[i] < '0' || s[i] > '9')
