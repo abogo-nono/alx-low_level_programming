@@ -10,9 +10,7 @@ char *cap_string(char *s)
 	int i, j;
 
 	for (i = 0; s[i] != '\0'; i++)
-	{
 		for (j = 'a'; j <= 'z'; j++)
-		{
 			if (
 				(s[i - 1] == ' ' ||
 				s[i - 1] == '\t' ||
@@ -28,11 +26,7 @@ char *cap_string(char *s)
 				s[i - 1] == '{' ||
 				s[i - 1] == '}') &&
 				s[i] == j)
-			{
 				s[i] = s[i] - 32;
-			}
-		}
-	}
 
 	return (s);
 }
