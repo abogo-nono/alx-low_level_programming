@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	(void)argv;
 
 	for (i = 1; i < argc; i++)
-		if (atoi(argv[i]))
+		if (atoi(argv[i]) && atoi(argv[i]) >= 0)
 			result += atoi(argv[i]);
 		else
 		{
