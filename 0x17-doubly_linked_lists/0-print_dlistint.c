@@ -1,15 +1,24 @@
 #include "lists.h"
 
+/**
+ * print_dlistint - display list element
+ * @h: the list
+ * Return: the number of element
+ */
 size_t print_dlistint(const dlistint_t *h)
 {
-    int sum = 0;
+	int sum = 0;
+	const dlistint_t *head = h;
 
-    while (h != NULL)
-    {
-        printf("%d\n", h->n);
-        h = h->next;
-        sum++;
-    }
+	if (head == NULL)
+		return (0);
 
-    return sum;
+	while (head != NULL)
+	{
+		printf("%d\n", head->n);
+		head = head->next;
+		sum++;
+	}
+
+	return (sum);
 }
