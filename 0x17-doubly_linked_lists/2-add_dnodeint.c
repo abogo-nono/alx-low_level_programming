@@ -15,17 +15,16 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	{
 		perror("Can't allocate memory!");
 		exit(EXIT_FAILURE);
+		return (NULL);
 	}
-
-	if (*list == NULL)
-		return (node);
 
 	node->n = n;
 	node->prev = NULL;
 	node->next = *list;
-	(*list)->prev = node;
+	if (*list == NULL)
+		(*list)->prev = node;
 
 	*list = node;
 
-	return (*list);
+	return (node);
 }
