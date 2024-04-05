@@ -62,6 +62,13 @@ int clear_bit(unsigned long int *n, unsigned int index);
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
 /**
+ * get_endianness - a function that checks the endianness.
+ * 
+ * Return: 0 if big endian, 1 if little endian
+*/
+int get_endianness(void);
+
+/**
  * _putchar - a function that prints a character to the standard output
  * 
  * @c: the character to print
