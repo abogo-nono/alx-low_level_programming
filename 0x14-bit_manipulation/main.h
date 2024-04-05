@@ -61,4 +61,13 @@ int clear_bit(unsigned long int *n, unsigned int index);
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
+/**
+ * _putchar - a function that prints a character to the standard output
+ * 
+ * @c: the character to print
+ * 
+ * Return: the character printed
+*/
+int _putchar(char c);
+
 #endif
