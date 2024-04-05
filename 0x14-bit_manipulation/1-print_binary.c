@@ -32,14 +32,8 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 
 	for (i = get_len(n) - 1; i >= 0; i--)
-	{
 		if (n & (1 << i))
-		{
 			_putchar('1');
-		}
 		else
-		{
 			_putchar('0');
-		}
-	}
 }
