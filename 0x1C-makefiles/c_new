@@ -1,0 +1,90 @@
+#!/bin/bash
+
+# This script creates a folder structure and base files for a C project.
+# It prompts the user for the project name and creates a folder with that name.
+# Inside the folder, it creates three subdirectories: src, include, and data.
+# The script also creates a .h and .c file in the src directory.
+# It also creates a README.md file and a Makefile.
+
+# Read the project name from the user input
+read -p "Enter the project name: " PROJECT_NAME
+
+# Create the project folder
+mkdir -p "$PROJECT_NAME"
+
+# Change to the project folder
+cd "$PROJECT_NAME"
+
+# Create the folder structure
+mkdir -p src include data
+
+# Create a .h file in the include directory
+echo "Creating include/${PROJECT_NAME}.h"
+touch include/"${PROJECT_NAME}".h
+
+# Create a .c file in the src directory
+echo "Creating src/${PROJECT_NAME}.c"
+touch src/"${PROJECT_NAME}".c
+
+# Create a main file in src directory
+echo "Creating src/main.c"
+touch src/main.c
+
+# Add include header to main.c
+echo "#include \"../include/${PROJECT_NAME}.h\"" >> src/main.c
+
+# Add io header to main.c
+echo "#include <stdio.h>" >> src/main.c
+
+# Add base c program to main.c
+cat << EOF >> src/main.c
+int main(void) {
+    printf("Hello, World!\\n");
+    return (0);
+}
+EOF
+
+# Add include header to .c file
+echo "#include \"../include/${PROJECT_NAME}.h\"" >> src/"${PROJECT_NAME}".c
+
+# Add include guard to the .h file
+echo "#ifndef ${PROJECT_NAME}_H" >> include/"${PROJECT_NAME}".h
+echo "#define ${PROJECT_NAME}_H" >> include/"${PROJECT_NAME}".h
+echo "" >> include/"${PROJECT_NAME}".h
+echo "#endif" >> include/"${PROJECT_NAME}".h
+
+# Create a README.md file
+echo "Creating README.md"
+read -p "Enter a description of the project: " DESCRIPTION
+cat << EOF > README.md
+# $PROJECT_NAME
+
+## Description
+$DESCRIPTION
+EOF
+
+# Create Makefile
+echo 'Creating Makefile'
+echo 'CC = gcc' > Makefile
+echo 'CFLAGS = -Wall -Werror -Wextra -pedantic' >> Makefile
+echo 'SRC = src/*.c' >> Makefile
+echo 'OBJ = $(SRC:.c=.o)' >> Makefile
+echo "NAME = ${PROJECT_NAME}" >> Makefile
+echo 'RM = rm -f' >> Makefile
+echo '' >> Makefile
+echo 'all: $(OBJ)' >> Makefile
+echo '	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)' >> Makefile
+echo '' >> Makefile
+echo 'clean:' >> Makefile
+echo '	$(RM) *~ $(NAME)' >> Makefile
+echo '' >> Makefile
+echo 'fclean:' >> Makefile
+echo '	$(RM) $(OBJ) $(NAME)' >> Makefile
+echo '' >> Makefile
+echo 're:' >> Makefile
+echo '	$(MAKE) fclean' >> Makefile
+echo '	$(MAKE) all' >> Makefile
+echo '' >> Makefile
+echo 'run:' >> Makefile
+echo "	./${PROJECT_NAME}" >> Makefile
+
