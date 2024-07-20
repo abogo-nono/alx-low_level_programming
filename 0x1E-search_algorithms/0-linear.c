@@ -3,13 +3,15 @@
 #include <stdlib.h>
 
 /**
- * linear_search - that searches for a value in an array of integers using the Linear search algorithm
+ * linear_search - that searches for a value in an array of integers using
+ * the Linear search algorithm
  *
- * @array: a pointer to the first elelment of the array we search in
+ * @array: a pointer to the first element of the array we search in
  * @size: the size of the array we search in.
  * @value: the value we search in the array
  *
- * Return: the first index where @value is located or -1 if @value is not present in @array or if @array is NULL
+ * Return: the first index where @value is located or -1
+ * if @value is not present in @array or if @array is NULL
  */
 int linear_search(int *array, size_t size, int value)
 {
@@ -31,5 +33,5 @@ int linear_search(int *array, size_t size, int value)
 	if (position == -1)
 		printf("Found %d at index: -1\n", value);
 
-	return position;
+	return (position);
 }
