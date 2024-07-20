@@ -24,14 +24,10 @@ int linear_search(int *array, size_t size, int value)
 
 		if (array[i] == value)
 		{
-			printf("Found %d at index: %ld\n", value, i);
 			position = i;
 			break;
 		}
 	}
-
-	if (position == -1)
-		printf("Found %d at index: -1\n", value);
 
 	return (position);
 }
