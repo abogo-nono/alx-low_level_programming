@@ -14,7 +14,6 @@
  * @value: the value we search in the array
  *
  * Return: the first index where @value is located or -1
- * if @value is not present in @array or if @array is NULL
  */
 int linear_search(int *array, size_t size, int value)
 {
