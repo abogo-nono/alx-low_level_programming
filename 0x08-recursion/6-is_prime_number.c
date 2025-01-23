@@ -15,10 +15,12 @@ int is_prime_number(int n)
 	if (n < 2)
 		return (0);
 	if (n % n == 0 || n % 1 == 0)
+	{
 		if (prime_number(divider, n) != 0)
 			return (1);
 		else
 			return (0);
+	}
 }
 
 /**
